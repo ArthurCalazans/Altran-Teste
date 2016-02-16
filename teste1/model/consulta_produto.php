@@ -27,7 +27,7 @@ while($c_produto = $r_produto->fetch_object())
 	<tr>
 		<td>'.$c_produto->id_produto.'</td>
 		<td>'.$c_produto->nome_produto.'</td>
-		<td>'.$c_produto->preco_produto.'</td>
+		<td>R$ '.number_format($c_produto->preco_produto,2,',','.').'</td>
 		<td>'.$c_produto->des_produto.'</td>
 	</tr>';	
 }	

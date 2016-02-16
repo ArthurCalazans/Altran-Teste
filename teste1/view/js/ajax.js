@@ -137,9 +137,9 @@ function Cad_Produto(){
 				 // {
 					// $('#error').click();
 				 // }
-				// result.innerHTML = xmlreq.responseText;
+				result.innerHTML = xmlreq.responseText;
 				Con_Produto();
-				result.innerHTML = "";
+				// result.innerHTML = "";
             }else{
                 result.innerHTML = "Erro: " + xmlreq.statusText;
             }
