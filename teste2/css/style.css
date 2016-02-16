@@ -1,0 +1,104 @@
+body
+{
+	width: 100%;
+	overflow: hidden;
+}
+a:link 
+{ 
+ text-decoration:none; 
+} 
+
+.container
+{
+	width: 1200px;
+	margin: auto;
+}
+.banner
+{
+	text-align: center;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.topo
+{
+	background-color: red;
+	position: relative;
+}
+.logo
+{
+	padding: 10px;
+
+	float: left;
+}
+.logo img
+{
+	width: 100%;
+}
+.menu
+{
+	width: 100%;	
+}
+.primeiro-menu 
+{
+	width: 950px;
+	height: 50px;
+	float: left;
+}
+.primeiro-menu li
+{
+	float: left;
+	margin: 10px 10px;
+	color: white;
+}
+.primeiro-menu li a
+{
+	color: white;
+	font-size: 14px;
+}
+
+.busca
+{
+	float:right;
+	background: #f9f9f9;
+	height: 20px;
+	margin: 6px 0px;
+}
+
+.clear
+{
+	clear: both;
+}
+.busca input
+{
+	background: #f9f9f9;
+	height: 15px;
+	border: 0px;
+	width: 100px;
+	font-family: Helvetica;
+}
+.busca img
+{
+	margin-top: 2px;
+	margin-bottom: -2px;
+}
+
+.segundo-menu
+{
+	width: 950px;
+	height: 50px;
+	margin-left: -40px;
+	width: 100%;
+}
+
+.segundo-menu li
+{
+	float: left;
+	margin: 10px 12px;
+	color: white;
+	font-size: 14px;
+}
+
+.segundo-menu .primeiro
+{
+	background: 
+}
