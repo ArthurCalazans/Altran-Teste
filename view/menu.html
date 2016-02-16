@@ -1,0 +1,32 @@
+<div class="mainbar">
+	<div class="container">
+		<button type="button" class="btn mainbar-toggle" data-toggle="collapse" data-target=".mainbar-collapse">
+			<i class="fa fa-bars"></i>
+		</button>
+		<div class="mainbar-collapse collapse">
+		
+			<ul class="nav navbar-nav mainbar-nav">
+				<li <?php if(empty($_GET['p'])){print 'class="active"';} ?>>
+					<a href="index.php">
+						<i class="fa fa-dashboard"></i>Inicio
+					</a>
+				</li>
+				<li <?php if(isset($_GET['p']) and $_GET['p']==1) {print 'class="active"';} ?>>
+					<a href="?p=1">
+						<i class="fa fa-desktop"></i>Cadastro de Produto
+					</a>
+				</li>
+				<li <?php if(isset($_GET['p']) and $_GET['p']==2) {print 'class="active"';} ?>>
+					<a href="?p=2">
+						<i class="fa fa-user"></i>Cadastro de Cliente
+					</a>
+				</li>
+				<li <?php if(isset($_GET['p']) and $_GET['p']==3) {print 'class="active"';} ?>>
+					<a href="?p=3">
+						<i class="fa fa-dollar"></i>Cadastro de Pedido
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> 
+</div>

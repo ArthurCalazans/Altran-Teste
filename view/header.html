@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" dir="ltr" lang="pt-BR"> <!--<![endif]-->
+<head>
+	<title>Altran - Teste 1</title>
+	
+	<meta charset="utf-8">
+	<meta name="author" content="Arthur Calazans">
+	<meta name="viewport" content="width=device-width">
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald:400,300,700">
+	<link rel="stylesheet" href="view/css/font-awesome.min.css">
+	<link rel="stylesheet" href="view/js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
+	<link rel="stylesheet" href="view/css/bootstrap.min.css">
+
+	<!-- Plugin CSS -->
+	<link rel="stylesheet" href="view/js/plugins/morris/morris.css">
+	<link rel="stylesheet" href="view/js/plugins/icheck/skins/minimal/blue.css">
+	<link rel="stylesheet" href="view/js/plugins/select2/select2.css">
+	<link rel="stylesheet" href="view/js/plugins/fullcalendar/fullcalendar.css">
+
+	<!-- App CSS -->
+	<link rel="stylesheet" href="view/css/target-admin.css">
+	<link rel="stylesheet" href="view/css/custom.css">
+	<link rel="stylesheet" href="view/css/demos/ui-notifications.css">
+
+</head>	
+
+<?php 
+	if(isset($_GET['p'])){
+		if($_GET['p']==1){ ?>
+			<body onload="Con_Produto();">
+		<?php }elseif($_GET['p']==2){ ?>
+			<body onload="Con_Cliente();">
+		<?php }elseif($_GET['p']==3){ ?>
+			<body onload="Con_Pedido();">
+		<?php } ?>
+<?php }else{ ?>
+	<body>
+<?php } ?>

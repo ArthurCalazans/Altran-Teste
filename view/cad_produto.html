@@ -1,0 +1,54 @@
+<div class="container">
+	<div class="content">
+		<div class="content-container">		
+			<?php include 'view/data_hora.html'; ?>
+			<br>
+			<div class="row">
+				<div class="col-sm-12 col-md-12">
+					<div class="portlet">
+						<div class="portlet-header">
+							<h3><i class="fa fa-tasks"></i>Cadastro de Produto</h3>
+						</div>
+						<div class="portlet-content">
+							<form name="cad_produto" class="form-horizontal" role="form">
+								<div class="form-group">
+									<label class="col-md-2">Nome</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control" name="nome" placeholder="Nome do Produto">
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-2">Preço</label>
+									<div class="col-md-10">
+										<div class="input-group">
+											<span class="input-group-addon">R$</span>
+											<input type="text" class="form-control" name="preco" id="idpreco">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<label class="col-md-2">Descrição</label>
+									<div class="col-md-10">
+									<textarea style="width:100%" name="descricao"></textarea>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="col-md-12">
+										<button type="button" onclick="Cad_Produto();" class="btn btn-success">
+											<i class="fa fa-check"></i> Cadastrar
+										</button>
+										<button type="reset" class="btn btn-secondary">
+											<i class="fa fa-eraser"></i> Limpar
+										</button>
+									</div>									
+								</div>							
+							</form>
+						</div>      
+					</div>
+				</div>
+				<div id="result"></div>
+				<div id="consulta_produto" class="col-sm-12 col-md-12"></div>	
+			</div>
+		</div>
+	</div>
+</div>
